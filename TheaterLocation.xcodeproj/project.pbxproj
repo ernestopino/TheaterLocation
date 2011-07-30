@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB5EADF113E225E500B5F567 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5EADEF13E225E500B5F567 /* RootViewController.m */; };
+		BB5EADF213E225E500B5F567 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB5EADF013E225E500B5F567 /* RootViewController.xib */; };
+		BB65BB5213E095A5009A3F03 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB65BB5113E095A5009A3F03 /* UIKit.framework */; };
+		BB65BB5413E095A5009A3F03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB65BB5313E095A5009A3F03 /* Foundation.framework */; };
+		BB65BB5613E095A5009A3F03 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB65BB5513E095A5009A3F03 /* CoreGraphics.framework */; };
+		BB65BB5C13E095A5009A3F03 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB65BB5A13E095A5009A3F03 /* InfoPlist.strings */; };
+		BB65BB5F13E095A5009A3F03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB65BB5E13E095A5009A3F03 /* main.m */; };
+		BB65BB6213E095A5009A3F03 /* TheaterLocationAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB65BB6113E095A5009A3F03 /* TheaterLocationAppDelegate.m */; };
+		BB65BB6513E095A5009A3F03 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB65BB6313E095A5009A3F03 /* MainWindow.xib */; };
+		BB65BB6813E095A5009A3F03 /* TheaterLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB65BB6713E095A5009A3F03 /* TheaterLocationViewController.m */; };
+		BB65BB6B13E095A5009A3F03 /* TheaterLocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB65BB6913E095A5009A3F03 /* TheaterLocationViewController.xib */; };
+		BB65BCF913E097AC009A3F03 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB65BCF813E097AC009A3F03 /* CFNetwork.framework */; };
+		BB65BCFB13E097B0009A3F03 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB65BCFA13E097B0009A3F03 /* SystemConfiguration.framework */; };
+		BB65BCFD13E097B6009A3F03 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB65BCFC13E097B6009A3F03 /* MobileCoreServices.framework */; };
+		BB65BDA313E09DC4009A3F03 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = BB65BD9013E09DC4009A3F03 /* ASIAuthenticationDialog.m */; };
+		BB65BDA413E09DC4009A3F03 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = BB65BD9313E09DC4009A3F03 /* ASIDataCompressor.m */; };
+		BB65BDA513E09DC4009A3F03 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = BB65BD9513E09DC4009A3F03 /* ASIDataDecompressor.m */; };
+		BB65BDA613E09DC4009A3F03 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BB65BD9713E09DC4009A3F03 /* ASIDownloadCache.m */; };
+		BB65BDA713E09DC4009A3F03 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BB65BD9913E09DC4009A3F03 /* ASIFormDataRequest.m */; };
+		BB65BDA813E09DC4009A3F03 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BB65BD9B13E09DC4009A3F03 /* ASIHTTPRequest.m */; };
+		BB65BDA913E09DC4009A3F03 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = BB65BD9F13E09DC4009A3F03 /* ASIInputStream.m */; };
+		BB65BDAA13E09DC4009A3F03 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = BB65BDA113E09DC4009A3F03 /* ASINetworkQueue.m */; };
+		BB65BDB113E09DEC009A3F03 /* README-GHUnit in Resources */ = {isa = PBXBuildFile; fileRef = BB65BDAD13E09DEC009A3F03 /* README-GHUnit */; };
+		BB65BDB213E09DEC009A3F03 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = BB65BDB013E09DEC009A3F03 /* Reachability.m */; };
+		BB65BDB413E09E87009A3F03 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BB65BDB313E09E87009A3F03 /* libz.1.2.3.dylib */; };
+		BB65BDB613E09E94009A3F03 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BB65BDB513E09E94009A3F03 /* libxml2.dylib */; };
+		BB65BE3213E0A0CF009A3F03 /* welcome_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = BB65BE3113E0A0CF009A3F03 /* welcome_screen.png */; };
+		BB65BE3A13E0A364009A3F03 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = BB65BE3413E0A364009A3F03 /* Icon-72.png */; };
+		BB65BE3B13E0A364009A3F03 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = BB65BE3513E0A364009A3F03 /* Icon-Small-50.png */; };
+		BB65BE3C13E0A364009A3F03 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = BB65BE3613E0A364009A3F03 /* Icon-Small.png */; };
+		BB65BE3D13E0A364009A3F03 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB65BE3713E0A364009A3F03 /* Icon-Small@2x.png */; };
+		BB65BE3E13E0A364009A3F03 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BB65BE3813E0A364009A3F03 /* Icon.png */; };
+		BB65BE3F13E0A364009A3F03 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB65BE3913E0A364009A3F03 /* Icon@2x.png */; };
+		BB65BE4113E0A648009A3F03 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB65BE4013E0A648009A3F03 /* CoreLocation.framework */; };
+		BB65BE4313E0A662009A3F03 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB65BE4213E0A662009A3F03 /* MapKit.framework */; };
+		BB65BEC313E0D120009A3F03 /* Play.m in Sources */ = {isa = PBXBuildFile; fileRef = BB65BEC213E0D120009A3F03 /* Play.m */; };
+		BB65BEC613E0D50C009A3F03 /* Theater.m in Sources */ = {isa = PBXBuildFile; fileRef = BB65BEC513E0D50C009A3F03 /* Theater.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BB5EADEE13E225E500B5F567 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		BB5EADEF13E225E500B5F567 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		BB5EADF013E225E500B5F567 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		BB65BB4D13E095A5009A3F03 /* TheaterLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheaterLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB65BB5113E095A5009A3F03 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BB65BB5313E095A5009A3F03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BB65BB5513E095A5009A3F03 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BB65BB5913E095A5009A3F03 /* TheaterLocation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TheaterLocation-Info.plist"; sourceTree = "<group>"; };
+		BB65BB5B13E095A5009A3F03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BB65BB5D13E095A5009A3F03 /* TheaterLocation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TheaterLocation-Prefix.pch"; sourceTree = "<group>"; };
+		BB65BB5E13E095A5009A3F03 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BB65BB6013E095A5009A3F03 /* TheaterLocationAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheaterLocationAppDelegate.h; sourceTree = "<group>"; };
+		BB65BB6113E095A5009A3F03 /* TheaterLocationAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheaterLocationAppDelegate.m; sourceTree = "<group>"; };
+		BB65BB6413E095A5009A3F03 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		BB65BB6613E095A5009A3F03 /* TheaterLocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheaterLocationViewController.h; sourceTree = "<group>"; };
+		BB65BB6713E095A5009A3F03 /* TheaterLocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheaterLocationViewController.m; sourceTree = "<group>"; };
+		BB65BB6A13E095A5009A3F03 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TheaterLocationViewController.xib; sourceTree = "<group>"; };
+		BB65BCF813E097AC009A3F03 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		BB65BCFA13E097B0009A3F03 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BB65BCFC13E097B6009A3F03 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		BB65BD8F13E09DC4009A3F03 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		BB65BD9013E09DC4009A3F03 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		BB65BD9113E09DC4009A3F03 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		BB65BD9213E09DC4009A3F03 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		BB65BD9313E09DC4009A3F03 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		BB65BD9413E09DC4009A3F03 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		BB65BD9513E09DC4009A3F03 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		BB65BD9613E09DC4009A3F03 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		BB65BD9713E09DC4009A3F03 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		BB65BD9813E09DC4009A3F03 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		BB65BD9913E09DC4009A3F03 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		BB65BD9A13E09DC4009A3F03 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		BB65BD9B13E09DC4009A3F03 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		BB65BD9C13E09DC4009A3F03 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		BB65BD9D13E09DC4009A3F03 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		BB65BD9E13E09DC4009A3F03 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		BB65BD9F13E09DC4009A3F03 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		BB65BDA013E09DC4009A3F03 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		BB65BDA113E09DC4009A3F03 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		BB65BDA213E09DC4009A3F03 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		BB65BDAD13E09DEC009A3F03 /* README-GHUnit */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "README-GHUnit"; sourceTree = "<group>"; };
+		BB65BDAF13E09DEC009A3F03 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		BB65BDB013E09DEC009A3F03 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		BB65BDB313E09E87009A3F03 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
+		BB65BDB513E09E94009A3F03 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		BB65BE3113E0A0CF009A3F03 /* welcome_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome_screen.png; sourceTree = "<group>"; };
+		BB65BE3413E0A364009A3F03 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		BB65BE3513E0A364009A3F03 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		BB65BE3613E0A364009A3F03 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		BB65BE3713E0A364009A3F03 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		BB65BE3813E0A364009A3F03 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		BB65BE3913E0A364009A3F03 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		BB65BE4013E0A648009A3F03 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BB65BE4213E0A662009A3F03 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BB65BE4C13E0BA8F009A3F03 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		BB65BEC113E0D120009A3F03 /* Play.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Play.h; sourceTree = "<group>"; };
+		BB65BEC213E0D120009A3F03 /* Play.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Play.m; sourceTree = "<group>"; };
+		BB65BEC413E0D50C009A3F03 /* Theater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theater.h; sourceTree = "<group>"; };
+		BB65BEC513E0D50C009A3F03 /* Theater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theater.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB65BB4A13E095A5009A3F03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB65BDB613E09E94009A3F03 /* libxml2.dylib in Frameworks */,
+				BB65BDB413E09E87009A3F03 /* libz.1.2.3.dylib in Frameworks */,
+				BB65BE4313E0A662009A3F03 /* MapKit.framework in Frameworks */,
+				BB65BE4113E0A648009A3F03 /* CoreLocation.framework in Frameworks */,
+				BB65BCFD13E097B6009A3F03 /* MobileCoreServices.framework in Frameworks */,
+				BB65BCFB13E097B0009A3F03 /* SystemConfiguration.framework in Frameworks */,
+				BB65BCF913E097AC009A3F03 /* CFNetwork.framework in Frameworks */,
+				BB65BB5213E095A5009A3F03 /* UIKit.framework in Frameworks */,
+				BB65BB5413E095A5009A3F03 /* Foundation.framework in Frameworks */,
+				BB65BB5613E095A5009A3F03 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB5EADF413E22CB800B5F567 /* XMLParsers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = XMLParsers;
+			sourceTree = "<group>";
+		};
+		BB65BB4213E095A5009A3F03 = {
+			isa = PBXGroup;
+			children = (
+				BB65BDAB13E09DEC009A3F03 /* External */,
+				BB65BB5713E095A5009A3F03 /* TheaterLocation */,
+				BB65BB5013E095A5009A3F03 /* Frameworks */,
+				BB65BB4E13E095A5009A3F03 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB65BB4E13E095A5009A3F03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB65BB4D13E095A5009A3F03 /* TheaterLocation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB65BB5013E095A5009A3F03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB65BDB513E09E94009A3F03 /* libxml2.dylib */,
+				BB65BDB313E09E87009A3F03 /* libz.1.2.3.dylib */,
+				BB65BE4213E0A662009A3F03 /* MapKit.framework */,
+				BB65BE4013E0A648009A3F03 /* CoreLocation.framework */,
+				BB65BCFC13E097B6009A3F03 /* MobileCoreServices.framework */,
+				BB65BCFA13E097B0009A3F03 /* SystemConfiguration.framework */,
+				BB65BCF813E097AC009A3F03 /* CFNetwork.framework */,
+				BB65BB5113E095A5009A3F03 /* UIKit.framework */,
+				BB65BB5313E095A5009A3F03 /* Foundation.framework */,
+				BB65BB5513E095A5009A3F03 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB65BB5713E095A5009A3F03 /* TheaterLocation */ = {
+			isa = PBXGroup;
+			children = (
+				BB65BDB713E09F23009A3F03 /* Settings */,
+				BB65BDB813E09F2E009A3F03 /* Delegates */,
+				BB65BDB913E09F35009A3F03 /* Controllers */,
+				BB65BDBA13E09F3D009A3F03 /* Model */,
+				BB65BDBB13E09F48009A3F03 /* Views */,
+				BB5EADF413E22CB800B5F567 /* XMLParsers */,
+				BB65BB7113E095B9009A3F03 /* Libraries */,
+				BB65BE2F13E0A0CF009A3F03 /* Resources */,
+				BB65BB5813E095A5009A3F03 /* Supporting Files */,
+			);
+			path = TheaterLocation;
+			sourceTree = "<group>";
+		};
+		BB65BB5813E095A5009A3F03 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB65BB5913E095A5009A3F03 /* TheaterLocation-Info.plist */,
+				BB65BB5A13E095A5009A3F03 /* InfoPlist.strings */,
+				BB65BB5D13E095A5009A3F03 /* TheaterLocation-Prefix.pch */,
+				BB65BB5E13E095A5009A3F03 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BB65BB7113E095B9009A3F03 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				BB65BD8E13E09DC4009A3F03 /* ASIHTTPRequest */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		BB65BD8E13E09DC4009A3F03 /* ASIHTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				BB65BD8F13E09DC4009A3F03 /* ASIAuthenticationDialog.h */,
+				BB65BD9013E09DC4009A3F03 /* ASIAuthenticationDialog.m */,
+				BB65BD9113E09DC4009A3F03 /* ASICacheDelegate.h */,
+				BB65BD9213E09DC4009A3F03 /* ASIDataCompressor.h */,
+				BB65BD9313E09DC4009A3F03 /* ASIDataCompressor.m */,
+				BB65BD9413E09DC4009A3F03 /* ASIDataDecompressor.h */,
+				BB65BD9513E09DC4009A3F03 /* ASIDataDecompressor.m */,
+				BB65BD9613E09DC4009A3F03 /* ASIDownloadCache.h */,
+				BB65BD9713E09DC4009A3F03 /* ASIDownloadCache.m */,
+				BB65BD9813E09DC4009A3F03 /* ASIFormDataRequest.h */,
+				BB65BD9913E09DC4009A3F03 /* ASIFormDataRequest.m */,
+				BB65BD9A13E09DC4009A3F03 /* ASIHTTPRequest.h */,
+				BB65BD9B13E09DC4009A3F03 /* ASIHTTPRequest.m */,
+				BB65BD9C13E09DC4009A3F03 /* ASIHTTPRequestConfig.h */,
+				BB65BD9D13E09DC4009A3F03 /* ASIHTTPRequestDelegate.h */,
+				BB65BD9E13E09DC4009A3F03 /* ASIInputStream.h */,
+				BB65BD9F13E09DC4009A3F03 /* ASIInputStream.m */,
+				BB65BDA013E09DC4009A3F03 /* ASINetworkQueue.h */,
+				BB65BDA113E09DC4009A3F03 /* ASINetworkQueue.m */,
+				BB65BDA213E09DC4009A3F03 /* ASIProgressDelegate.h */,
+			);
+			path = ASIHTTPRequest;
+			sourceTree = "<group>";
+		};
+		BB65BDAB13E09DEC009A3F03 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				BB65BDAC13E09DEC009A3F03 /* GHUnit */,
+				BB65BDAE13E09DEC009A3F03 /* Reachability */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		BB65BDAC13E09DEC009A3F03 /* GHUnit */ = {
+			isa = PBXGroup;
+			children = (
+				BB65BDAD13E09DEC009A3F03 /* README-GHUnit */,
+			);
+			path = GHUnit;
+			sourceTree = "<group>";
+		};
+		BB65BDAE13E09DEC009A3F03 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				BB65BDAF13E09DEC009A3F03 /* Reachability.h */,
+				BB65BDB013E09DEC009A3F03 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		BB65BDB713E09F23009A3F03 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				BB65BE4C13E0BA8F009A3F03 /* Settings.h */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		BB65BDB813E09F2E009A3F03 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				BB65BB6013E095A5009A3F03 /* TheaterLocationAppDelegate.h */,
+				BB65BB6113E095A5009A3F03 /* TheaterLocationAppDelegate.m */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		BB65BDB913E09F35009A3F03 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BB5EADEE13E225E500B5F567 /* RootViewController.h */,
+				BB5EADEF13E225E500B5F567 /* RootViewController.m */,
+				BB65BB6613E095A5009A3F03 /* TheaterLocationViewController.h */,
+				BB65BB6713E095A5009A3F03 /* TheaterLocationViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		BB65BDBA13E09F3D009A3F03 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB65BEC113E0D120009A3F03 /* Play.h */,
+				BB65BEC213E0D120009A3F03 /* Play.m */,
+				BB65BEC413E0D50C009A3F03 /* Theater.h */,
+				BB65BEC513E0D50C009A3F03 /* Theater.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BB65BDBB13E09F48009A3F03 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BB65BB6313E095A5009A3F03 /* MainWindow.xib */,
+				BB5EADF013E225E500B5F567 /* RootViewController.xib */,
+				BB65BB6913E095A5009A3F03 /* TheaterLocationViewController.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		BB65BE2F13E0A0CF009A3F03 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BB65BE3313E0A364009A3F03 /* icons */,
+				BB65BE3013E0A0CF009A3F03 /* images */,
+			);
+			path = Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+		BB65BE3013E0A0CF009A3F03 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				BB65BE3113E0A0CF009A3F03 /* welcome_screen.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		BB65BE3313E0A364009A3F03 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				BB65BE3413E0A364009A3F03 /* Icon-72.png */,
+				BB65BE3513E0A364009A3F03 /* Icon-Small-50.png */,
+				BB65BE3613E0A364009A3F03 /* Icon-Small.png */,
+				BB65BE3713E0A364009A3F03 /* Icon-Small@2x.png */,
+				BB65BE3813E0A364009A3F03 /* Icon.png */,
+				BB65BE3913E0A364009A3F03 /* Icon@2x.png */,
+			);
+			path = icons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB65BB4C13E095A5009A3F03 /* TheaterLocation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB65BB6E13E095A5009A3F03 /* Build configuration list for PBXNativeTarget "TheaterLocation" */;
+			buildPhases = (
+				BB65BB4913E095A5009A3F03 /* Sources */,
+				BB65BB4A13E095A5009A3F03 /* Frameworks */,
+				BB65BB4B13E095A5009A3F03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheaterLocation;
+			productName = TheaterLocation;
+			productReference = BB65BB4D13E095A5009A3F03 /* TheaterLocation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB65BB4413E095A5009A3F03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = epinom;
+			};
+			buildConfigurationList = BB65BB4713E095A5009A3F03 /* Build configuration list for PBXProject "TheaterLocation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				de,
+			);
+			mainGroup = BB65BB4213E095A5009A3F03;
+			productRefGroup = BB65BB4E13E095A5009A3F03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB65BB4C13E095A5009A3F03 /* TheaterLocation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB65BB4B13E095A5009A3F03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB65BB5C13E095A5009A3F03 /* InfoPlist.strings in Resources */,
+				BB65BB6513E095A5009A3F03 /* MainWindow.xib in Resources */,
+				BB65BB6B13E095A5009A3F03 /* TheaterLocationViewController.xib in Resources */,
+				BB65BDB113E09DEC009A3F03 /* README-GHUnit in Resources */,
+				BB65BE3213E0A0CF009A3F03 /* welcome_screen.png in Resources */,
+				BB65BE3A13E0A364009A3F03 /* Icon-72.png in Resources */,
+				BB65BE3B13E0A364009A3F03 /* Icon-Small-50.png in Resources */,
+				BB65BE3C13E0A364009A3F03 /* Icon-Small.png in Resources */,
+				BB65BE3D13E0A364009A3F03 /* Icon-Small@2x.png in Resources */,
+				BB65BE3E13E0A364009A3F03 /* Icon.png in Resources */,
+				BB65BE3F13E0A364009A3F03 /* Icon@2x.png in Resources */,
+				BB5EADF213E225E500B5F567 /* RootViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB65BB4913E095A5009A3F03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB65BB5F13E095A5009A3F03 /* main.m in Sources */,
+				BB65BB6213E095A5009A3F03 /* TheaterLocationAppDelegate.m in Sources */,
+				BB65BB6813E095A5009A3F03 /* TheaterLocationViewController.m in Sources */,
+				BB65BDA313E09DC4009A3F03 /* ASIAuthenticationDialog.m in Sources */,
+				BB65BDA413E09DC4009A3F03 /* ASIDataCompressor.m in Sources */,
+				BB65BDA513E09DC4009A3F03 /* ASIDataDecompressor.m in Sources */,
+				BB65BDA613E09DC4009A3F03 /* ASIDownloadCache.m in Sources */,
+				BB65BDA713E09DC4009A3F03 /* ASIFormDataRequest.m in Sources */,
+				BB65BDA813E09DC4009A3F03 /* ASIHTTPRequest.m in Sources */,
+				BB65BDA913E09DC4009A3F03 /* ASIInputStream.m in Sources */,
+				BB65BDAA13E09DC4009A3F03 /* ASINetworkQueue.m in Sources */,
+				BB65BDB213E09DEC009A3F03 /* Reachability.m in Sources */,
+				BB65BEC313E0D120009A3F03 /* Play.m in Sources */,
+				BB65BEC613E0D50C009A3F03 /* Theater.m in Sources */,
+				BB5EADF113E225E500B5F567 /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BB65BB5A13E095A5009A3F03 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB65BB5B13E095A5009A3F03 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BB65BB6313E095A5009A3F03 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB65BB6413E095A5009A3F03 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		BB65BB6913E095A5009A3F03 /* TheaterLocationViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB65BB6A13E095A5009A3F03 /* en */,
+			);
+			name = TheaterLocationViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB65BB6C13E095A5009A3F03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BB65BB6D13E095A5009A3F03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		BB65BB6F13E095A5009A3F03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TheaterLocation/TheaterLocation-Prefix.pch";
+				INFOPLIST_FILE = "TheaterLocation/TheaterLocation-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BB65BB7013E095A5009A3F03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TheaterLocation/TheaterLocation-Prefix.pch";
+				INFOPLIST_FILE = "TheaterLocation/TheaterLocation-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB65BB4713E095A5009A3F03 /* Build configuration list for PBXProject "TheaterLocation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB65BB6C13E095A5009A3F03 /* Debug */,
+				BB65BB6D13E095A5009A3F03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB65BB6E13E095A5009A3F03 /* Build configuration list for PBXNativeTarget "TheaterLocation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB65BB6F13E095A5009A3F03 /* Debug */,
+				BB65BB7013E095A5009A3F03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB65BB4413E095A5009A3F03 /* Project object */;
+}
