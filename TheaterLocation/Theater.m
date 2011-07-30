@@ -19,7 +19,7 @@
 @synthesize zip;
 @synthesize city;
 
--(void) dealloc
+- (void)dealloc
 {
     [name release];
     [address release];

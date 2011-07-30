@@ -23,7 +23,7 @@
 @synthesize urlImage;
 @synthesize urlThumb;
 
--(void) dealloc
+- (void)dealloc
 {
     [title release];
     [theater release];

@@ -171,6 +171,25 @@
                      }
                      completion:^(BOOL finished){
                          NSLog(@"Eliminando vista de bienvenida...");
+                         
+                         NSDate *date = [NSDate dateWithTimeIntervalSince1970:1311717600];
+                         
+                         NSLocale *esLocale = [[NSLocale alloc] initWithLocaleIdentifier:@"es_ES"];
+                         
+                         NSDateFormatter *dateFormatter = [[[NSDateFormatter alloc] init] autorelease];
+                         [dateFormatter setTimeStyle:NSDateFormatterNoStyle];
+                         [dateFormatter setDateFormat:@"'['EEE'] 'dd' de 'MMMM' de 'yyyy"];
+                         [dateFormatter setLocale:esLocale];
+                         
+                         NSLog(@"Date for locale %@: %@",
+                               [[dateFormatter locale] localeIdentifier], [dateFormatter stringFromDate:date]);
+
+                         /*
+                         [esLocale release];
+                         [date release];
+                         [dateFormatter release];
+                          */
+                         
                         [self.view removeFromSuperview];
                      }];
 }
