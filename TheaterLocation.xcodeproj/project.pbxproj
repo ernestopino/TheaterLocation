@@ -44,6 +44,9 @@
 		BB65BE4313E0A662009A3F03 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB65BE4213E0A662009A3F03 /* MapKit.framework */; };
 		BB65BEC313E0D120009A3F03 /* Play.m in Sources */ = {isa = PBXBuildFile; fileRef = BB65BEC213E0D120009A3F03 /* Play.m */; };
 		BB65BEC613E0D50C009A3F03 /* Theater.m in Sources */ = {isa = PBXBuildFile; fileRef = BB65BEC513E0D50C009A3F03 /* Theater.m */; };
+		BB7B7ED513E455730017F668 /* Time.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7B7ED413E455730017F668 /* Time.m */; };
+		BB7B7ED813E4578C0017F668 /* Session.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7B7ED713E4578C0017F668 /* Session.m */; };
+		BB7B7EDB13E45AF50017F668 /* SessionsFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7B7EDA13E45AF50017F668 /* SessionsFormatter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,6 +109,12 @@
 		BB65BEC213E0D120009A3F03 /* Play.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Play.m; sourceTree = "<group>"; };
 		BB65BEC413E0D50C009A3F03 /* Theater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theater.h; sourceTree = "<group>"; };
 		BB65BEC513E0D50C009A3F03 /* Theater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theater.m; sourceTree = "<group>"; };
+		BB7B7ED313E455730017F668 /* Time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Time.h; sourceTree = "<group>"; };
+		BB7B7ED413E455730017F668 /* Time.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Time.m; sourceTree = "<group>"; };
+		BB7B7ED613E4578C0017F668 /* Session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Session.h; sourceTree = "<group>"; };
+		BB7B7ED713E4578C0017F668 /* Session.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Session.m; sourceTree = "<group>"; };
+		BB7B7ED913E45AF50017F668 /* SessionsFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionsFormatter.h; sourceTree = "<group>"; };
+		BB7B7EDA13E45AF50017F668 /* SessionsFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionsFormatter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +189,7 @@
 				BB65BDBA13E09F3D009A3F03 /* Model */,
 				BB65BDBB13E09F48009A3F03 /* Views */,
 				BB5EADF413E22CB800B5F567 /* XMLParsers */,
+				BB7B7EC813E44FE90017F668 /* Utils */,
 				BB65BB7113E095B9009A3F03 /* Libraries */,
 				BB65BE2F13E0A0CF009A3F03 /* Resources */,
 				BB65BB5813E095A5009A3F03 /* Supporting Files */,
@@ -294,6 +304,10 @@
 				BB65BEC213E0D120009A3F03 /* Play.m */,
 				BB65BEC413E0D50C009A3F03 /* Theater.h */,
 				BB65BEC513E0D50C009A3F03 /* Theater.m */,
+				BB7B7ED313E455730017F668 /* Time.h */,
+				BB7B7ED413E455730017F668 /* Time.m */,
+				BB7B7ED613E4578C0017F668 /* Session.h */,
+				BB7B7ED713E4578C0017F668 /* Session.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -336,6 +350,15 @@
 				BB65BE3913E0A364009A3F03 /* Icon@2x.png */,
 			);
 			path = icons;
+			sourceTree = "<group>";
+		};
+		BB7B7EC813E44FE90017F668 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BB7B7ED913E45AF50017F668 /* SessionsFormatter.h */,
+				BB7B7EDA13E45AF50017F668 /* SessionsFormatter.m */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -426,6 +449,9 @@
 				BB65BEC313E0D120009A3F03 /* Play.m in Sources */,
 				BB65BEC613E0D50C009A3F03 /* Theater.m in Sources */,
 				BB5EADF113E225E500B5F567 /* RootViewController.m in Sources */,
+				BB7B7ED513E455730017F668 /* Time.m in Sources */,
+				BB7B7ED813E4578C0017F668 /* Session.m in Sources */,
+				BB7B7EDB13E45AF50017F668 /* SessionsFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

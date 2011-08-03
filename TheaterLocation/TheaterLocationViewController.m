@@ -8,6 +8,8 @@
 
 #import "TheaterLocationViewController.h"
 #import "ASIHTTPRequest.h"
+#import "Time.h"
+#import "SessionsFormatter.h"
 
 @implementation TheaterLocationViewController
 
@@ -183,11 +185,34 @@
                          
                          NSLog(@"Date for locale %@: %@",
                                [[dateFormatter locale] localeIdentifier], [dateFormatter stringFromDate:date]);
-
+                         
+                         // Creando datos de funciones, simulando parseo de XML y conversion en listado de objetos Time
+                         Time *time1 = [[Time alloc] init];
+                         time1.stamp = 1311717600;
+                         time1.start = @"15:00";
+                         time1.end = @"17:00";
+                         
+                         Time *time2 = [[Time alloc] init];
+                         time2.stamp = 1311717600;
+                         time2.start = @"20:00";
+                         time2.end = @"22:00";
+                         
+                         NSArray *times = [[NSArray alloc] initWithObjects:time1, time2, nil];
+                         [SessionsFormatter transformTimeListIntoSessionList:times];
+                         
                          /*
-                         [esLocale release];
-                         [date release];
-                         [dateFormatter release];
+                          <times>
+                            <time>
+                                <date>1311717600</date>
+                                <start>15:00</start>
+                                <end>17:00</end>
+                            </time>
+                            <time>
+                                <date>1311717600</date>
+                                <start>20:00</start>
+                                <end>22:00</end>
+                            </time>
+                          </times>
                           */
                          
                         [self.view removeFromSuperview];

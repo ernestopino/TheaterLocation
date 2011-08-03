@@ -11,12 +11,12 @@
 
 @interface Session : NSObject {
     NSString *formattedDate;
-    NSArray *formattedTimes;
+    NSMutableArray *formattedTimes;
     NSArray *times;
 }
 
 @property (nonatomic, retain) NSString *formattedDate;
-@property (nonatomic, retain) NSArray *formattedTimes;
+@property (nonatomic, retain) NSMutableArray *formattedTimes;
 @property (nonatomic, retain) NSArray *times;
 
 @end
